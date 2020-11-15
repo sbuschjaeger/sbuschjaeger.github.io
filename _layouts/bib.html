@@ -110,12 +110,22 @@
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
     {% endif %}
+    <a class="bibtex btn btn-sm z-depth-0" role="button">Bibtex</a>
+      <!-- <div class="dropDownBibtex" id="{{key}}-bibtex">
+        <pre>{{entry.bibtex}}</pre>
+      </div> -->
     </div>
 
     <!-- Hidden abstract block -->
     {% if entry.abstract %}
     <div class="abstract hidden">
       <p>{{ entry.abstract }}</p>
+    </div>
+    {% endif %}
+
+    {% if entry.bibtex %}
+    <div class="bibtex hidden">
+      <pre>{{ entry.bibtex }}</pre>
     </div>
     {% endif %}
   </div>
