@@ -26,7 +26,7 @@ My formal CV is available in [German](/assets/pdf/cv.pdf) or [English](/assets/p
 #### research topics
 
 - **Machine Learning** Ensemble learning, model application, submodular functions
-- **Computerarchitecture** Architecture-dependent optimizations and code generation, custom architectures/FPGAs, embedded devices
+- **Computer Architecture** Architecture-dependent optimizations and code generation, custom architectures/FPGAs, embedded devices
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

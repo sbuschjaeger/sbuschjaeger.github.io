@@ -24,13 +24,13 @@ nav: true
 
 ### supervised thesis
 
-- Datenzusammenfassungen auf Datenströmen by Mike Schmidt (BA)
-- DeepRacin auf FPGAs - Ein Framework zur Inferenz von DeepLearning Modellen auf FPGAs by Andreas Buehner (BA)
-- Einsatz einer End-to-End Lösung für die Relevanzbewertung von Fragen im Question-Community-Answering by Maurice Freund (BA)
-- Evolution Strategies als Trainingsmethode für neuronale Netze by Jan Kemming (BA)
-- Optimierung von logistischer Regression auf FPGAs by Moritz Sliwinski (BA)
-- Parameterschätzung mit Gütegarantie durch Bandit Models für die Regelung im Industrie 4.0 Kontext by Pierre Haritz (BA)
-- Umsetzung einer High-Performance {FPGA}-Schnittstelle für maschinelles Lernen by Fabian Dillkötter (BA)
-- Unüberwachte Ausreißererkennung mit Hilfe von Submodularen Funktionen by Philipp-Jan Honysz (MA)
+- Datenzusammenfassungen auf Datenströmen, Mike Schmidt (BA)
+- DeepRacin auf FPGAs - Ein Framework zur Inferenz von DeepLearning Modellen auf FPGAs,Andreas Buehner (BA)
+- Einsatz einer End-to-End Lösung für die Relevanzbewertung von Fragen im Question-Community-Answering, Maurice Freund (BA)
+- Evolution Strategies als Trainingsmethode für neuronale Netze, Jan Kemming (BA)
+- Optimierung von logistischer Regression auf FPGAs, Moritz Sliwinski (BA)
+- Parameterschätzung mit Gütegarantie durch Bandit Models für die Regelung im Industrie 4.0 Kontext, Pierre Haritz (BA)
+- Umsetzung einer High-Performance {FPGA}-Schnittstelle für maschinelles Lernen, Fabian Dillkötter (BA)
+- Unüberwachte Ausreißererkennung mit Hilfe von Submodularen Funktionen, Philipp-Jan Honysz (MA)
 
 

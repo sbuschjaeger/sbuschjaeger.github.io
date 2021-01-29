@@ -6,7 +6,7 @@ description: I do some programming. That stuff is mostly in Python and C/C++.
 nav: true
 ---
 
-These are some software packages which are independent from specific papers and which I try to maintain as best as possible. For a complete list of software projects checkout my github [repistories](https://github.com/sbuschjaeger?tab=repositories).
+These are some software packages which are independent from specific papers and which I try to maintain as best as possible. For a complete list of software projects checkout my github [repositories](https://github.com/sbuschjaeger?tab=repositories).
 
 ### pysembles
 
@@ -20,7 +20,7 @@ PyTorch + Ensembles = Pysembles. This is a collection of ensembling algorithms i
     - End2End Ensembles
     - Stacking
 
-Check out the repo. for more information [https://github.com/sbuschjaeger/Pysembles](https://github.com/sbuschjaeger/Pysembles)
+Check out the repository for more information [https://github.com/sbuschjaeger/Pysembles](https://github.com/sbuschjaeger/Pysembles)
 
 ### submodular Streaming Maximization
 
@@ -33,8 +33,8 @@ Submodular Maximization meets streaming in a header-only C++ library with Python
     - Random
     - Salsa
 
-A huge shoutout goes to [Philipp Honysz](https://github.com/philippjh) who came up with the initial implementation during his master thesis.
-Check out the repo. for more information [https://github.com/sbuschjaeger/SubmodularStreamingMaximization](https://github.com/sbuschjaeger/SubmodularStreamingMaximization)
+A huge shout out goes to [Philipp Honysz](https://github.com/philippjh) who came up with the initial implementation during his master thesis.
+Check out the repository for more information [https://github.com/sbuschjaeger/SubmodularStreamingMaximization](https://github.com/sbuschjaeger/SubmodularStreamingMaximization)
 
 
 ### fastinference
@@ -47,4 +47,4 @@ For classical machine learning algorithm we have fewer, but still very capable m
 
 If you are interested in quickly trying out more obscure implementations then this tool might be interesting for you. FastInference supports the generation of Binarized Neural Networks and has been used in our ECML Paper "On-Site Gamma-Hadron Separation with Deep Learning on FPGAs". It also has been used for generating cache-friendly DT ensembles in our paper "Realization of Random Forest for Real-Time  Evaluation through Tree Framing". 
 
-Check out the repo. for more information [https://github.com/sbuschjaeger/fastinference](https://github.com/sbuschjaeger/fastinference)
+Check out the repository. for more information [https://github.com/sbuschjaeger/fastinference](https://github.com/sbuschjaeger/fastinference)
