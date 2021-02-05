@@ -1,3 +1,13 @@
+@misc{Honysz/etal/2021,
+    title={GPU-Accelerated Optimizer-Aware Evaluation of Submodular Exemplar Clustering}, 
+    author={Philipp-Jan Honysz and Sebastian Buschjäger and Katharina Morik},
+    year={2021},
+    abstract = {The optimization of submodular functions constitutes a viable way to perform clustering. Strong approximation guarantees and feasible optimization w.r.t. streaming data make this clustering approach favorable. Technically, submodular functions map subsets of data to real values, which indicate how "representative" a specific subset is. Optimal sets might then be used to partition the data space and to infer clusters. Exemplar-based clustering is one of the possible submodular functions, but suffers from high computational complexity. However, for practical applications, the particular real-time or wall-clock run-time is decisive. In this work, we present a novel way to evaluate this particular function on GPUs, which keeps the necessities of optimizers in mind and reduces wall-clock run-time. To discuss our GPU algorithm, we investigated both the impact of different run-time critical problem properties, like data dimensionality and the number of data points in a subset, and the influence of required floating-point precision. In reproducible experiments, our GPU algorithm was able to achieve competitive speedups of up to 72x depending on whether multi-threaded computation on CPUs was used for comparison and the type of floating-point precision required. Half-precision GPU computation led to large speedups of up to 452x compared to single-precision, single-thread CPU computations.},
+    url = {https://arxiv.org/pdf/2101.08763.pdf},
+    arxiv = {2101.08763},
+    code = {https://github.com/philippjh/exemcl},
+    abbr = {arXiv}
+}
 
 @inproceedings{Buschjaeger/etal/2021a,
   author = {Buschj\"{a}ger, Sebastian and Chen,  Jian-Jia and Chen, Kuan-Hsun and G{\"u}nzel, Mario and Hakert, Christian and Morik, Katharina and Novkin, Rodion and Pfahler, Lukas and Yayla, Mikail},
@@ -5,7 +15,8 @@
   booktitle = {Proceedings of DATE 2021},
   year = {2021},
   selected = {true},
-  abbr = {DATE}
+  abbr = {DATE},
+  url = {https://ls12-www.cs.tu-dortmund.de/daes/media/documents/publications/downloads/2021dateyayla.pdf}
 }
 
 @article{Buschjager/Honysz/2020c,
@@ -19,7 +30,9 @@
 	title = {{Randomized outlier detection with trees}},
 	url = {https://doi.org/10.1007/s41060-020-00238-w},
   year = {2020},
-  video = {https://www.youtube.com/watch?v=MOH6n8wiF7E}
+  video = {https://www.youtube.com/watch?v=MOH6n8wiF7E},
+  abbr = {JDSA},
+  selected = {true}
 }
 
 
@@ -35,7 +48,8 @@ Multiple extensions enhance the original Isolation Forest algorithm including th
 In this paper, we present a theoretical framework that describes the effectiveness of isolation-based approaches from a distributional viewpoint. We show that these algorithms fit a mixture of distributions, where the average path length of an observation can be viewed as a (somewhat crude) approximation of the mixture coefficient. Using this framework, we derive the Generalized Isolation Forest (GIF) which also trains random trees, but combining them moves beyond using the average path-length. 
 In an extensive evaluation of over \$350,000\$ experiments, we show that GIF outperforms the other methods on a variety of datasets while having comparable runtime.},
   abbr = {DSAA2020},
-  video = {https://www.youtube.com/watch?v=MOH6n8wiF7E}
+  video = {https://www.youtube.com/watch?v=MOH6n8wiF7E},
+  url = {https://ieeexplore.ieee.org/abstract/document/9260007}
 }
 
 @article{Buschjaeger/Honysz/2020b,
@@ -43,7 +57,7 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   title = {Very Fast Streaming Submodular Function Maximization},
   year = {2020},
   abstract = {Data summarization has become a valuable tool in understanding even terabytes of data. Due to their compelling theoretical properties, submodular functions have been in the focus of summarization algorithms. These algorithms offer worst-case approximations guarantees to the expense of higher computation and memory requirements. However, many practical applications do not fall under this worst-case, but are usually much more well-behaved. In this paper, we propose a new submodular function maximization algorithm called ThreeSieves, which ignores the worst-case, but delivers a good solution in high probability. It selects the most informative items from a data-stream on the fly and maintains a provable performance on a fixed memory budget. In an extensive evaluation of more than 7000 experiments, we show that our algorithm outperforms current state-of-the-art algorithms and, at the same time, uses fewer resources. Last, we highlight a real-world use-case of our algorithm for data summarization in gamma-ray astronomy.},
-  URL = {https://arxiv.org/abs/2010.10059},
+  url = {https://arxiv.org/pdf/2010.10059.pdf},
   arxiv = {2010.10059},
   code = {https://github.com/sbuschjaeger/SubmodularStreamingMaximization},
   selected = {true},
@@ -55,7 +69,7 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   title = {Generalized Negative Correlation Learning for Deep Ensembling},
   year = {2020},
   arxiv = {2011.02952},
-  url = {https://arxiv.org/abs/2011.02952},
+  url = {https://arxiv.org/pdf/2011.02952.pdf},
   abstract = {Ensemble algorithms offer state of the art performance in many machine learning applications. A common explanation for their excellent performance is due to the bias-variance decomposition of the mean squared error which shows that the algorithm's error can be decomposed into its bias and variance. Both quantities are often opposed to each other and ensembles offer an effective way to manage them as they reduce the variance through a diverse set of base learners while keeping the bias low at the same time. Even though there have been numerous works on decomposing other loss functions, the exact mathematical connection is rarely exploited explicitly for ensembling, but merely used as a guiding principle. In this paper, we formulate a generalized bias-variance decomposition for arbitrary twice differentiable loss functions and study it in the context of Deep Learning. We use this decomposition to derive a Generalized Negative Correlation Learning (GNCL) algorithm which offers explicit control over the ensemble's diversity and smoothly interpolates between the two extremes of independent training and the joint training of the ensemble. We show how GNCL encapsulates many previous works and discuss under which circumstances training of an ensemble of Neural Networks might fail and what ensembling method should be favored depending on the choice of the individual networks.},
   selected = {true},
   abbr = {arXiv}
@@ -64,7 +78,8 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
 @misc{Buschjaeger/etal/2020b,
   author = {Buschj\"{a}ger, Sebastian and Chen, Jian-Jia and Chen, Kuan-Hsun and G{\"u}nzel, Mario and Hakert, Christian and Morik, Katharina and Novkin, Rodion and Pfahler, Lukas and Yayla, Mikail},
   title = {Towards Explainable Bit Error Tolerance of Resistive RAM-Based Binarized Neural Networks},
-  year = {2020}
+  year = {2020},
+  url = {https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/buschjaeger_etal_2020b.pdf}
 }
 
 @inproceedings{Buschjaeger/etal/2020a,
@@ -84,9 +99,9 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   title = {Stack Usage Analysis for Efficient Wear Leveling in Non-Volatile Main Memory Systems},
   booktitle = {1st ACM/IEEE Workshop on Machine Learning for CAD (MLCAD)},
   year = {2019},
-  abbr = {MLCAD}
+  abbr = {MLCAD},
+  url = {https://ieeexplore.ieee.org/abstract/document/9142113}
 }
-
 
 @inproceedings{Buschjaeger/etal/2019a,
   author = {Buschj\"{a}ger, Sebastian and Liebig, Thomas and Morik, Katharina},
@@ -157,7 +172,8 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   title = {Online Gau{\ss}-Prozesse zur Regression auf FPGAs},
   school = {TU Dortmund},
   year = {2016},
-  abbr = {MA}
+  abbr = {MA},
+  url = {https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/buschjaeger_2016a.pdf}
 }
 
 
@@ -165,16 +181,18 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   author = {Buschj\"{a}ger, Sebastian and Pfahler, Lukas and Morik, Katharina},
   title = {Discovering Subtle Word Relation in Large German Corpora},
   booktitle = {Proceedings of the 3rd Workshop on the Challenges in the Management of Large Corpora},
-  year = {2015}
+  year = {2015},
+  url = {https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/buschjaeger_etal_2015a.pdf}
 }
-
-@techreport{Morik/etal/2015a,
+  
+  @techreport{Morik/etal/2015a,
   author = {Morik, Katharina and Jung, Alexander and Weckwerth, Jan  and R{\"o}tner, Stefan and Hess, Sibylle  and Buschj\"{a}ger, Sebastian and Pfahler, Lukas},
   title = {Untersuchungen zur Analyse von deutschsprachigen Textdaten},
   institution = {Technische Universit\"{a}t Dortmund},
   month = {12},
   number = {2},
-  year = {2015}
+  year = {2015},
+  url = {https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/morik_etal_2015a.pdf}
 }
 
 

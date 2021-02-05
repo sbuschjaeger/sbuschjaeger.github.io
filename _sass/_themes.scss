@@ -11,6 +11,9 @@
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-icon-color: #{$grey-color-dark};
+  --global-bibtex-color: #{$grey-color-light};
+  --global-bibtex-bg-color: #{$grey-color-dark};
+  --nav-item-color: #{$grey-color-dark};
 
   .fa-sun {
     display : none;
@@ -31,6 +34,9 @@ html[data-theme='dark'] {
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-icon-color: navajowhite;
+  --global-bibtex-color: var(--global-bg-color);
+  --global-bibtex-bg-color: var(--global-text-color);
+  --nav-item-color: #{$grey-color-light};
 
   .fa-sun {
     padding-left: 10px;

@@ -80,6 +80,7 @@ a, table.table a {
   opacity: 0.95;
   background-color: var(--global-bg-color);
 }
+
 .navbar.navbar-light {
   // Remove link decoration
   a {
@@ -90,11 +91,14 @@ a, table.table a {
   .navbar-brand {
     color: var(--global-text-color);
   }
+
   .navbar-nav .nav-item .nav-link {
     &:hover {
       color: var(--global-hover-color);
     }
+    color: var(--nav-item-color);
   }
+
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
       font-weight: bolder;
@@ -299,7 +303,7 @@ footer.sticky-bottom {
   }
   h2.year {
     color: $grey-color;
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid var(--global-theme-color);
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
@@ -391,11 +395,30 @@ footer.sticky-bottom {
         -o-transition: 0.15s ease;
         transition: all 0.15s ease;
       }
-      div.abstract.hidden {
-        border: dashed 1px white;
-      }
+      
+      //div.abstract.hidden {
+      //  border: dashed 1px white;
+      //}
+
       div.abstract.hidden.open {
         border-color: $grey-color;
+      }
+      
+      // div.bibtex.hidden.open {
+      //   background: var(--global-bibtex-bg-color);
+      //   color: var(--global-bibtex-color);
+      //   max-height: 200px;
+      // }
+
+      pre.bibtex.hidden.open {
+        margin: 5px;
+        background: var(--global-bibtex-bg-color);
+        color: var(--global-bibtex-color);
+        max-height: 300px;
+        overflow: auto;
+        word-break: normal !important;
+        word-wrap: normal !important;
+        padding-left: 5px;
       }
     }
   }

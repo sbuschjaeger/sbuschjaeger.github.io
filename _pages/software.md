@@ -12,13 +12,13 @@ These are some software packages which are independent from specific papers and 
 
 PyTorch + Ensembles = Pysembles. This is a collection of ensembling algorithms implemented in PyTorch for our paper ["Generalized Negative Correlation Learning for Deep Ensembling"](https://arxiv.org/abs/2011.02952). These are mostly straightforward implementations with some optimizations. Currently, I maintain the following ensembling algorithms:
 
-    - (Generalized) Negative Correlation Learning
-    - Bagging
-    - (Stochastic) Gradient Boosting
-    - Snapshot Ensembles
-    - Stochastic Multiple Choice Learning
-    - End2End Ensembles
-    - Stacking
+- (Generalized) Negative Correlation Learning
+- Bagging
+- (Stochastic) Gradient Boosting
+- Snapshot Ensembles
+- Stochastic Multiple Choice Learning
+- End2End Ensembles
+- Stacking
 
 Check out the repository for more information [https://github.com/sbuschjaeger/Pysembles](https://github.com/sbuschjaeger/Pysembles)
 
@@ -26,12 +26,12 @@ Check out the repository for more information [https://github.com/sbuschjaeger/P
 
 Submodular Maximization meets streaming in a header-only C++ library with Python bindings. We wrote this code for our paper ["Very Fast Streaming Submodular Function Maximization"](https://arxiv.org/abs/2010.10059) which introduces a new nonnegative submodular function maximization algorithm for streaming data. For our experiments, we also implemented already existing state-of-the-art streaming algorithms for which we could not find an implementation. Currently, the following algorithms are implemented:
 
-    - Greedy
-    - SieveStreaming
-    - SieveStreaming++
-    - ThreeSieves
-    - Random
-    - Salsa
+- Greedy
+- SieveStreaming
+- SieveStreaming++
+- ThreeSieves
+- Random
+- Salsa
 
 A huge shout out goes to [Philipp Honysz](https://github.com/philippjh) who came up with the initial implementation during his master thesis.
 Check out the repository for more information [https://github.com/sbuschjaeger/SubmodularStreamingMaximization](https://github.com/sbuschjaeger/SubmodularStreamingMaximization)
