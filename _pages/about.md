@@ -7,9 +7,7 @@ description: Sometimes I do stuff.
 profile:
   align: right
   image: profile.jpg
-  address: >
-    <p>Otto-Hahn Straße 12, R4017</p>
-    <p>D-44221 Dortmund</p>
+  address: 
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
