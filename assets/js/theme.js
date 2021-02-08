@@ -4,6 +4,8 @@ let initTheme = (theme) => {
     const userPref = window.matchMedia;
     if (userPref && userPref('(prefers-color-scheme: light)').matches) {
         theme = 'light';
+    } else {
+      theme = 'dark'
     }
   }
 

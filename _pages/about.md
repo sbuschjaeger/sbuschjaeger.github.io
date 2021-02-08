@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a PhD student at the [artificial intelligence group](https://www-ai.cs.tu-dortmund.de/index.html) of the TU Dortmund University, Germany. I am currently part of the Collaborative Research Center SFB 876, [project A1](https://sfb876.tu-dortmund.de/SPP/sfb876-a1.html). In this projects we develop new machine learning methods for embedded systems and small devices.  
+I am a [PhD student] (https://www-ai.cs.tu-dortmund.de/PERSONAL/buschjaeger.html) at the [artificial intelligence group](https://www-ai.cs.tu-dortmund.de/index.html) of the TU Dortmund University, Germany. I am currently part of the Collaborative Research Center SFB 876, [project A1](https://sfb876.tu-dortmund.de/SPP/sfb876-a1.html). In this projects we develop new machine learning methods for embedded systems and small devices.  
 Apart from research, I play badminton, do some running and watch way too many movies. 
 
 My formal CV is available in [German](/assets/pdf/cv.pdf) or [English](/assets/pdf/cv_eng.pdf).
