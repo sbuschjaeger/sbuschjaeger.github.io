@@ -5,7 +5,7 @@ let initTheme = (theme) => {
     if (userPref && userPref('(prefers-color-scheme: light)').matches) {
         theme = 'light';
     } else {
-      theme = 'dark'
+        theme = 'dark'
     }
   }
 
