@@ -8,7 +8,7 @@ nav: true
 
 These are some software packages which are independent from specific papers and which I try to maintain as best as possible. For a complete list of software projects checkout my github [repositories](https://github.com/sbuschjaeger?tab=repositories).
 
-### pysembles
+### Pysembles
 
 PyTorch + Ensembles = Pysembles. This is a collection of ensembling algorithms implemented in PyTorch for our paper ["Generalized Negative Correlation Learning for Deep Ensembling"](https://arxiv.org/abs/2011.02952). These are mostly straightforward implementations with some optimizations. Currently, I maintain the following ensembling algorithms:
 
@@ -22,7 +22,7 @@ PyTorch + Ensembles = Pysembles. This is a collection of ensembling algorithms i
 
 Check out the repository for more information [https://github.com/sbuschjaeger/Pysembles](https://github.com/sbuschjaeger/Pysembles)
 
-### submodular Streaming Maximization
+### Submodular Streaming Maximization
 
 Submodular Maximization meets streaming in a header-only C++ library with Python bindings. We wrote this code for our paper ["Very Fast Streaming Submodular Function Maximization"](https://arxiv.org/abs/2010.10059) which introduces a new nonnegative submodular function maximization algorithm for streaming data. For our experiments, we also implemented already existing state-of-the-art streaming algorithms for which we could not find an implementation. Currently, the following algorithms are implemented:
 
@@ -32,19 +32,30 @@ Submodular Maximization meets streaming in a header-only C++ library with Python
 - ThreeSieves
 - Random
 - Salsa
+- IndependentSetImprovement
 
 A huge shout out goes to [Philipp Honysz](https://github.com/philippjh) who came up with the initial implementation during his master thesis.
 Check out the repository for more information [https://github.com/sbuschjaeger/SubmodularStreamingMaximization](https://github.com/sbuschjaeger/SubmodularStreamingMaximization)
 
+### PyPruning
 
-### fastinference
+Ensemble Pruning in Python. PyPruning provides implementations for the most common ensemble pruning algorithms. Pruning algorithms aim to select the best subset of an trained ensemble to minimize memory consumption and maximize accuracy. Currently, six types of pruning algorithms are implemented:
 
-Machine learning + jinja2 = FastInference. FastInference is a machine learning model compiler specifically targeted to small, embedded systems. Moreover, we aim to provide an easily extensible framework for researchers and practitioners alike. The main idea behind FastInference is to statically compile models into source code files which are then compiled using a regular compiler. This two-step process has the advantage that there is no runtime environment required on the target system, and we can make use of system-specific instructions on the embedded system. To make this approach flexible and accessible we heavily rely on template instantiation managed by jinja2. Simply put, we provide a set of pre-programmed templates for different ML models for a target language/backend, and then FastInference will make sure that correct data types, instructions, etc. are used during template instantiation. In order to add new ML models and/or backend, you simply need to provide the core computations for model application as a jinja2 template. 
+- `RandomPruningClassifier`: Selects a random subset of classifiers. This is mainly used as a baseline.
+- `RankPruningClassifier`: Rank each classifier according to a given metric and then select the best K classifier.
+- `ClusterPruningClassifier`: Cluster the classifiers according to a clustering method and then select a representative from each cluster to from the sub-ensemble.
+- `GreedyPruningClassifier`: Proceeds in rounds and selects the best classifier in each round given the already selected sub-ensemble. 
+- `MIQPPruningClassifier`: Constructs a mixed-integer quadratic problem and optimizes this to compute the best sub ensemble. 
+- `ProxPruningClassifier`: Minimize a (regularized) loss function via (stochastic) proximal gradient descent over the ensembles weights. 
 
-If you are interested in deploying machine learning models for production then this project is probably not mature enough for you. For deep learning there are a ton of frameworks available such as [glow](https://github.com/pytorch/glow), [tensorflow-lite](https://www.tensorflow.org/), [ONNX Runtime](https://github.com/microsoft/onnxruntime), [NGraph](https://github.com/NervanaSystems/ngraph), [MACE](https://github.com/XiaoMi/mace), [NCNN](https://github.com/Tencent/ncnn), [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt), [OpenVINO Toolkit](https://github.com/openvinotoolkit/openvino) and probably more. 
-For classical machine learning algorithm we have fewer, but still very capable model compiler such as [Hummingbird](https://github.com/microsoft/hummingbird) or 
-[Treelite](https://github.com/dmlc/treelite).
+Check out the repository for more information [https://github.com/sbuschjaeger/pypruning](https://github.com/sbuschjaeger/pypruning)
 
-If you are interested in quickly trying out more obscure implementations then this tool might be interesting for you. FastInference supports the generation of Binarized Neural Networks and has been used in our ECML Paper "On-Site Gamma-Hadron Separation with Deep Learning on FPGAs". It also has been used for generating cache-friendly DT ensembles in our paper "Realization of Random Forest for Real-Time  Evaluation through Tree Framing". 
+### Fastinference
 
-Check out the repository. for more information [https://github.com/sbuschjaeger/fastinference](https://github.com/sbuschjaeger/fastinference)
+Fastinference is a machine learning model optimizer and model compiler that generates the optimal implementation for your model and hardware architecture. It encapsulates many classical ML algorithms such as Decision Trees or Random Forests as well as modern Deep Learning architectures. It is easily extensible and also offers more obscure models such as [Binarized Neural Networks](https://sbuschjaeger.github.io/fastinference/html/neuralnet.html). In Fastinference 
+
+- **The user comes first:** We believe that the user know best what implementation and what type of optimizations should be performed. Hence, we generate *readable* code so that the user can adapt and change the implementation if necessary. 
+- **Optimizations and implementations are separated.** Fastinference distinguishes between model optimizations and model implementation. You can combine different optimizations freely with different implementations and vice-versa. For example, [PyPruning](https://github.com/sbuschjaeger/pypruning) is fully supported. 
+- **Rapid prototyping is key** You can easily add your own implementation while benefiting from all optimizations performed on the model and vice-versa. 
+
+Fastinference is currently targeted to small, embedded systems as well as FPGAs, but we are always open to expand it use. For more details please see the [documentation](https://sbuschjaeger.github.io/fastinference/html/index.html).

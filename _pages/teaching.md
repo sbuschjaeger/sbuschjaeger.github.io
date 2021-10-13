@@ -32,5 +32,6 @@ nav: true
 - Parameterschätzung mit Gütegarantie durch Bandit Models für die Regelung im Industrie 4.0 Kontext, Pierre Haritz (BA)
 - Umsetzung einer High-Performance {FPGA}-Schnittstelle für maschinelles Lernen, Fabian Dillkötter (BA)
 - Unüberwachte Ausreißererkennung mit Hilfe von Submodularen Funktionen, Philipp-Jan Honysz (MA)
+- Anwendung von Ensemble-Modellen unter Ressourcenbeschränkungen: Ein Framework für Ensemble Pruning Verfahren, Henri Petuker (BA)
 
 

@@ -1,16 +1,58 @@
-@misc{Honysz/etal/2021,
-    title={GPU-Accelerated Optimizer-Aware Evaluation of Submodular Exemplar Clustering}, 
-    author={Philipp-Jan Honysz and Sebastian Buschjäger and Katharina Morik},
+@inproceedings{Buschjaeger/etal/2021a,
+  author = {Buschj\"{a}ger, Sebastian and Philipp-Jan Honysz and Pfahler, Lukas and Morik, Katharina},
+  title = {Very Fast Streaming Submodular Function Maximization},
+  booktitle = {Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  publisher = {Springer},
+  year = {2021},
+  url={https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_178.pdf},
+  slides = {ecml2021_slides.pdf},
+  video = {https://slideslive.com/38963553/very-fast-streaming-submodular-function-maximization},
+  selected = {true},
+  abbr = {ECML2021}
+}
+
+@misc{Honysz/etal/2021b,
+    title={Providing Meaningful Data Summarizations Using Exemplar-based Clustering in Industry 4.0}, 
+    author={Philipp-Jan Honysz and Alexander Schulze-Struchtrup and Sebastian Buschjäger and Katharina Morik},
     year={2021},
-    abstract = {The optimization of submodular functions constitutes a viable way to perform clustering. Strong approximation guarantees and feasible optimization w.r.t. streaming data make this clustering approach favorable. Technically, submodular functions map subsets of data to real values, which indicate how "representative" a specific subset is. Optimal sets might then be used to partition the data space and to infer clusters. Exemplar-based clustering is one of the possible submodular functions, but suffers from high computational complexity. However, for practical applications, the particular real-time or wall-clock run-time is decisive. In this work, we present a novel way to evaluate this particular function on GPUs, which keeps the necessities of optimizers in mind and reduces wall-clock run-time. To discuss our GPU algorithm, we investigated both the impact of different run-time critical problem properties, like data dimensionality and the number of data points in a subset, and the influence of required floating-point precision. In reproducible experiments, our GPU algorithm was able to achieve competitive speedups of up to 72x depending on whether multi-threaded computation on CPUs was used for comparison and the type of floating-point precision required. Half-precision GPU computation led to large speedups of up to 452x compared to single-precision, single-thread CPU computations.},
-    url = {https://arxiv.org/pdf/2101.08763.pdf},
-    arxiv = {2101.08763},
-    code = {https://github.com/philippjh/exemcl},
+    eprint={2105.12026},
+    url = {https://arxiv.org/abs/2105.12026},
+    arxiv = {2105.12026},
     abbr = {arXiv}
 }
 
+@misc{Honysz/etal/2021a,
+  title={GPU-Accelerated Optimizer-Aware Evaluation of Submodular Exemplar Clustering}, 
+  author={Philipp-Jan Honysz and Sebastian Buschjäger and Katharina Morik},
+  year={2021},
+  abstract = {The optimization of submodular functions constitutes a viable way to perform clustering. Strong approximation guarantees and feasible optimization w.r.t. streaming data make this clustering approach favorable. Technically, submodular functions map subsets of data to real values, which indicate how "representative" a specific subset is. Optimal sets might then be used to partition the data space and to infer clusters. Exemplar-based clustering is one of the possible submodular functions, but suffers from high computational complexity. However, for practical applications, the particular real-time or wall-clock run-time is decisive. In this work, we present a novel way to evaluate this particular function on GPUs, which keeps the necessities of optimizers in mind and reduces wall-clock run-time. To discuss our GPU algorithm, we investigated both the impact of different run-time critical problem properties, like data dimensionality and the number of data points in a subset, and the influence of required floating-point precision. In reproducible experiments, our GPU algorithm was able to achieve competitive speedups of up to 72x depending on whether multi-threaded computation on CPUs was used for comparison and the type of floating-point precision required. Half-precision GPU computation led to large speedups of up to 452x compared to single-precision, single-thread CPU computations.},
+  url = {https://arxiv.org/pdf/2101.08763.pdf},
+  arxiv = {2101.08763},
+  code = {https://github.com/philippjh/exemcl},
+  abbr = {arXiv}
+}
+
+@misc{Buschjaeger/etal/2021c,
+  title={Bit Error Tolerance Metrics for Binarized Neural Networks}, 
+  author={Sebastian Buschjäger and Jian-Jia Chen and Kuan-Hsun Chen and Mario Günzel and Katharina Morik and Rodion Novkin and Lukas Pfahler and Mikail Yayla},
+  year={2021},
+  arxiv = {2102.01344},
+  url={https://arxiv.org/abs/2102.01344},
+  abbr = {arXiv}
+}
+
+@article{Yayla/etal/2021,
+  author={Yayla, Mikail and Buschjager, Sebastian and Gupta, Aniket and Chen, Jian-Jia and Henkel, Jorg and Morik, Katharina and Chen, Kuan-Hsun and Amrouch, Hussam},
+  journal={IEEE Transactions on Computers}, 
+  title={FeFET-based Binarized Neural Networks Under Temperature-dependent Bit Errors}, 
+  year={2021},
+  pages={1-1},
+  doi={10.1109/TC.2021.3104736},
+  url = {https://ieeexplore.ieee.org/document/9513530}
+}
+
 @inproceedings{Buschjaeger/etal/2021a,
-  author = {Buschj\"{a}ger, Sebastian and Chen,  Jian-Jia and Chen, Kuan-Hsun and G{\"u}nzel, Mario and Hakert, Christian and Morik, Katharina and Novkin, Rodion and Pfahler, Lukas and Yayla, Mikail},
+  author = {Buschj\"{a}ger, Sebastian and Chen, Jian-Jia and Chen, Kuan-Hsun and G{\"u}nzel, Mario and Hakert, Christian and Morik, Katharina and Novkin, Rodion and Pfahler, Lukas and Yayla, Mikail},
   title = {Margin-Maximization in Binarized Neural Networks for Optimizing Bit Error Tolerance},
   booktitle = {Proceedings of DATE 2021},
   year = {2021},
@@ -34,7 +76,6 @@
   abbr = {JDSA},
   selected = {true}
 }
-
 
 @inproceedings{Buschjaeger/Honysz/2020a,
   author = {Buschj\"{a}ger, Sebastian and Honysz, Philipp-Jan and Morik, Katharina},
@@ -60,7 +101,6 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   url = {https://arxiv.org/pdf/2010.10059.pdf},
   arxiv = {2010.10059},
   code = {https://github.com/sbuschjaeger/SubmodularStreamingMaximization},
-  selected = {true},
   abbr = {arXiv}
 }
 
