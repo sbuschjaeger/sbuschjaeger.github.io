@@ -26,6 +26,7 @@ nav: true
 
 - Datenzusammenfassungen auf Datenströmen, Mike Schmidt (BA)
 - DeepRacin auf FPGAs - Ein Framework zur Inferenz von DeepLearning Modellen auf FPGAs,Andreas Buehner (BA)
+- Deep Submodular Autoencoder für Datenzusammenfassung, Minsu So (BA)
 - Einsatz einer End-to-End Lösung für die Relevanzbewertung von Fragen im Question-Community-Answering, Maurice Freund (BA)
 - Evolution Strategies als Trainingsmethode für neuronale Netze, Jan Kemming (BA)
 - Optimierung von logistischer Regression auf FPGAs, Moritz Sliwinski (BA)
@@ -33,5 +34,4 @@ nav: true
 - Umsetzung einer High-Performance {FPGA}-Schnittstelle für maschinelles Lernen, Fabian Dillkötter (BA)
 - Unüberwachte Ausreißererkennung mit Hilfe von Submodularen Funktionen, Philipp-Jan Honysz (MA)
 - Anwendung von Ensemble-Modellen unter Ressourcenbeschränkungen: Ein Framework für Ensemble Pruning Verfahren, Henri Petuker (BA)
-
-
+-Vergleich einer einheitlichen Implementierung von QuickScorer und RapidScorer mit OpenMP, Simon Koschel (BA)
