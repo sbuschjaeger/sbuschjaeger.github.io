@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: I did some teaching. However, that stuff is mostly in German.
+description: I do some teaching. However, that stuff is mostly in German.
 nav: true
 ---
 
@@ -15,6 +15,7 @@ nav: true
 
 ### regular teaching
 
+- SS 2023: [TinyML - Machine Learning and Small Devices](https://moodle.tu-dortmund.de/course/view.php?id=38981)
 - WS 18/19: [Übung Maschinelles Lernen](https://www-ai.cs.tu-dortmund.de/LEHRE/VORLESUNGEN/MLRN/WS1819/index.html)
 - SS 2018: [Übung Wissensentdeckung in Datenbanken](https://www-ai.cs.tu-dortmund.de/LEHRE/VORLESUNGEN/KDD/SS18/index.html)
 - WS 17/18: [Deep Learning on FPGAs](https://www-ai.cs.tu-dortmund.de/LEHRE/FACHPROJEKT/WS1718/index.html)

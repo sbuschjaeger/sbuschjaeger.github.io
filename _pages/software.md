@@ -8,6 +8,12 @@ nav: true
 
 These are some software packages which are independent from specific papers and which I try to maintain as best as possible. For a complete list of software projects checkout my github [repositories](https://github.com/sbuschjaeger?tab=repositories).
 
+### Shrub Ensembles
+
+Shrub Ensembles are ensembles of small decision trees (hence _shrubs_) computed by a combination of regular batch DT algorithms and a global refinement minimizing a joint loss function. Shrub Ensembles are incredibly versatile. They can be trained via single- and multi-core SGD on a powerful server, via Federated Learning utilizing a network of devices, or directly on a small device after deployment. This software package started as a simple C++ implementation of classic DT algorithms such as CART and then became somewhat optimized over time. For small sample sizes (N < 16000), it usually outperforms [scikit-learn](https://scikit-learn.org/) in terms of speed. 
+
+Check out the repository for more information [https://github.com/sbuschjaeger/ShrubEnsembles](https://github.com/sbuschjaeger/ShrubEnsembles)
+
 ### Pysembles
 
 PyTorch + Ensembles = Pysembles. This is a collection of ensembling algorithms implemented in PyTorch for our paper ["Generalized Negative Correlation Learning for Deep Ensembling"](https://arxiv.org/abs/2011.02952). These are mostly straightforward implementations with some optimizations. Currently, I maintain the following ensembling algorithms:
