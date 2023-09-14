@@ -1,3 +1,39 @@
+@Article{Buschjaeger/Morik/2023,
+  author       = {Sebastian Buschj{\"{a}}ger and Katharina Morik},
+  title        = {Joint leaf-refinement and ensemble pruning through L\({}_{\mbox{1}}\) regularization},
+  number       = {3},
+  pages        = {1230--1261},
+  volume       = {37},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  biburl       = {https://dblp.org/rec/journals/datamine/BuschjagerM23.bib},
+  date         = {2023},
+  doi          = {10.1007/s10618-023-00921-z},
+  journaltitle = {Data Min. Knowl. Discov.},
+  timestamp    = {Sat, 13 May 2023 01:07:00 +0200},
+  url          = {https://doi.org/10.1007/s10618-023-00921-z},
+  slides       = {ecml2023_slides.pdf},
+  poster       = {ecml2023_poster.pdf},
+  selected     = {true},
+  code         = {https://github.com/sbuschjaeger/leaf-refinement-experiments},
+  abbr         = {ECML}
+}
+
+@Article{Koschel/etal/2023,
+  author       = {Simon Koschel and Sebastian Buschj{\"{a}}ger and Claudio Lucchese and Katharina Morik},
+  title        = {Fast Inference of Tree Ensembles on {ARM} Devices},
+  volume       = {abs/2305.08579},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2305-08579.bib},
+  date         = {2023},
+  doi          = {10.48550/arXiv.2305.08579},
+  eprint       = {2305.08579},
+  eprinttype   = {arXiv},
+  journaltitle = {CoRR},
+  timestamp    = {Wed, 17 May 2023 15:47:36 +0200},
+  url          = {https://doi.org/10.48550/arXiv.2305.08579},
+  abbr         = {arXiv}
+}
+
 @PhdThesis{Buschjaeger/2022,
   author    = {Sebastian Buschj{\"{a}}ger},
   title     = {Ensemble learning with discrete classifiers on small devices},
@@ -12,30 +48,37 @@
   abbr = {PhD Thesis}
 }
 
-@inproceedings{Buschjaeger/etal/2022,
-      title={Shrub Ensembles for Online Classification (to appear, accepted)}, 
-      author={Sebastian Buschjäger and Sibylle Hess and Katharina Morik},
-      year={2022},
-      url = {https://arxiv.org/abs/2112.03723},
-      arxiv = {2112.03723},
-      abbr = {AAAI},
-      selected = {true},
-      booktitle = {Proceedings of the Thirty-Sixth {AAAI} Conference on Artificial Intelligence (AAAI-22)},
-      publisher = { {AAAI} Press},
-      selected = {true},
-      slides = {aaai2022_slides.pdf},
-      poster = {aaai2022_poster.pdf},
-      video = {https://slideslive.com/embed/presentation/38976989?embed_parent_url=https%3A%2F%2Faaai-2022.virtualchair.net%2Fposter_aaai10816&embed_container_origin=https%3A%2F%2Faaai-2022.virtualchair.net&embed_container_id=presentation-video&auto_load=true&auto_play=false&zoom_ratio=&disable_fullscreen=false&locale=en&vertical_enabled=true&vertical_enabled_on_mobile=false&allow_hidden_controls_when_paused=false&fit_to_viewport=true&user_uuid=6693ffb9-6d22-4e46-8c19-6db37e50a729},
-      code = {https://github.com/sbuschjaeger/se-online}
+@InProceedings{Buschjaeger/etal/2022,
+  author    = {Sebastian Buschjäger and Sibylle Hess and Katharina Morik},
+  booktitle = {Proceedings of the Thirty-Sixth {AAAI} Conference on Artificial Intelligence (AAAI-22)},
+  title     = {Shrub Ensembles for Online Classification},
+  year      = {2022},
+  publisher = {{AAAI} Press},
+  abbr      = {AAAI},
+  arxiv     = {2112.03723},
+  code      = {https://github.com/sbuschjaeger/se-online},
+  poster    = {aaai2022_poster.pdf},
+  selected  = {true},
+  slides    = {aaai2022_slides.pdf},
+  url       = {https://arxiv.org/abs/2112.03723},
+  video     = {https://slideslive.com/embed/presentation/38976989?embed_parent_url=https%3A%2F%2Faaai-2022.virtualchair.net%2Fposter_aaai10816&embed_container_origin=https%3A%2F%2Faaai-2022.virtualchair.net&embed_container_id=presentation-video&auto_load=true&auto_play=false&zoom_ratio=&disable_fullscreen=false&locale=en&vertical_enabled=true&vertical_enabled_on_mobile=false&allow_hidden_controls_when_paused=false&fit_to_viewport=true&user_uuid=6693ffb9-6d22-4e46-8c19-6db37e50a729},
 }
 
-@article{Chen/etal/2022,
-      title={Efficient Realization of Decision Trees for Real-Time Inference (to appear, accepted)}, 
-      author={Kuan-Hsun Chen and Chia-Hui Hsu and Christian Hakert and Sebastian Buschj\"ager and Chao-Lin Lee and Jenq-Kuen Lee and Katharina Morik and Jian-Jia Chen},
-      journal = {ACM Transactions on Embedded Computing Systems},
-      year = {2022},
-      abbr = {TECS},
-      selected = {true}
+@Article{Chen/etal/2021,
+  author    = {Chen, Kuan-Hsun and Su, ChiaHui and Hakert, Christian and Buschj\"{a}ger, Sebastian and Lee, Chao-Lin and Lee, Jenq-Kuen and Morik, Katharina and Chen, Jian-Jia},
+  title     = {Efficient Realization of Decision Trees for Real-Time Inference},
+  doi       = {10.1145/3508019},
+  issn      = {1539-9087},
+  url       = {https://doi.org/10.1145/3508019},
+  abstract  = {For timing-sensitive edge applications, the demand for efficient lightweight machine learning solutions has increased recently. Tree ensembles are among the state-of-the-art in many machine learning applications. While single decision trees are comparably small, an ensemble of trees can have a significant memory footprint leading to cache locality issues, which are crucial to performance in terms of execution time. In this work, we analyze memory-locality issues of the two most common realizations of decision trees, i.e. native and if-else trees. We highlight, that both realizations demand a more careful memory layout to improve caching behavior and maximize performance. We adopt a probabilistic model of decision tree inference to find the best memory layout for each tree at the application layer. Further, we present an efficient heuristic to take architecture-dependent information into account thereby optimizing the given ensemble for a target computer architecture. Our code-generation framework, which is freely available on an open-source repository, produces optimized code sessions while preserving the structure and accuracy of the trees. With several real-world data sets, we evaluate the elapsed time of various tree realizations on server hardware as well as embedded systems for Intel and ARM processors. Our optimized memory layout achieves a reduction in execution time up to 75 % execution for server-class systems, and up to 70 % for embedded systems, respectively.},
+  address   = {New York, NY, USA},
+  journal   = {{ACM} Transactions on Embedded Computing Systems},
+  keywords  = {Random Forest, Optimized Memory Layout, Real-Time Inference, Cache-Aware Optimization, Architecture-Aware Realization},
+  month     = {dec},
+  publisher = {Association for Computing Machinery},
+  year      = {2021},
+  abbr = {TECS},
+  selected = {true}
 }
 
 @misc{Buschjaeger/morik/2021c,
@@ -60,8 +103,7 @@
       primaryClass={cs.LG},
       url = {https://arxiv.org/abs/2110.10075},
       arxiv = {2110.10075},
-      abbr = {arXiv},
-      selected = {true}
+      abbr = {arXiv}
 }
 
 @inproceedings{Buschjaeger/etal/2021a,
@@ -73,7 +115,6 @@
   url={https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_178.pdf},
   slides = {ecml2021_slides.pdf},
   video = {https://slideslive.com/38963553/very-fast-streaming-submodular-function-maximization},
-  selected = {true},
   abbr = {ECML}
 }
 
@@ -288,8 +329,9 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   year = {2015},
   url = {https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/buschjaeger_etal_2015a.pdf}
 }
+
   
-  @techreport{Morik/etal/2015a,
+@techreport{Morik/etal/2015a,
   author = {Morik, Katharina and Jung, Alexander and Weckwerth, Jan  and R{\"o}tner, Stefan and Hess, Sibylle  and Buschj\"{a}ger, Sebastian and Pfahler, Lukas},
   title = {Untersuchungen zur Analyse von deutschsprachigen Textdaten},
   institution = {Technische Universit\"{a}t Dortmund},
@@ -299,5 +341,81 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   url = {https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/morik_etal_2015a.pdf}
 }
 
+@Article{Yayla/etal/2022,
+  author    = {Mikail Yayla and Simon Thomann and Sebastian Buschj{\"{a}}ger and Katharina Morik and Jian{-}Jia Chen and Hussam Amrouch},
+  journal   = {{IEEE} Trans. Circuits Syst. {I} Regul. Pap.},
+  title     = {Reliable Binarized Neural Networks on Unreliable Beyond Von-Neumann Architecture},
+  year      = {2022},
+  number    = {6},
+  pages     = {2516--2528},
+  volume    = {69},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/tcasI/YaylaTBMCA22.bib},
+  doi       = {10.1109/TCSI.2022.3156165},
+  timestamp = {Mon, 28 Aug 2023 21:37:53 +0200},
+  url       = {https://doi.org/10.1109/TCSI.2022.3156165},
+}
 
+@InCollection{Buschjaeger/Morik/2022,
+  author    = {Sebastian Buschj{\"{a}}ger and Katharina Morik},
+  booktitle = {Machine Learning under Resource Constraints - Volume 1: Fundamentals},
+  publisher = {De Gruyter},
+  title     = {Summary Extraction from Streams},
+  year      = {2022},
+  editor    = {Katharina Morik and Peter Marwedel},
+  pages     = {73--84},
+  series    = {De Gruyter {STEM}},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/books/degruyter/22/BuschjagerMM22-1.bib},
+  doi       = {10.1515/9783110785944-003},
+  timestamp = {Fri, 28 Jul 2023 13:34:21 +0200},
+  url       = {https://doi.org/10.1515/9783110785944-003},
+}
 
+@InCollection{Rhode/etal/2022,
+  author    = {Wolfgang Rhode and Tim Ruhe and Maximilian Linhoff and Jens Bu{\ss} and Lukas Nickel and Sebastian Buschj{\"{a}}ger},
+  booktitle = {Machine Learning under Resource Constraints - Volume 2: Discovery in Physics},
+  publisher = {De Gruyter},
+  title     = {Monitoring and Feature Extraction},
+  year      = {2022},
+  editor    = {Katharina Morik and Wolfgang Rhode},
+  pages     = {163--191},
+  series    = {De Gruyter {STEM}},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/books/degruyter/22/RhodeRLBNB22.bib},
+  doi       = {10.1515/9783110785968-007},
+  timestamp = {Fri, 28 Jul 2023 11:18:35 +0200},
+  url       = {https://doi.org/10.1515/9783110785968-007},
+}
+
+@InCollection{Rhode/etal/2022a,
+  author    = {Wolfgang Rhode and Mirco H{\"{u}}nnefeld and Bernhard Spaan and Vukan Jevtic and Lukas Pfahler and Sebastian Buschj{\"{a}}ger},
+  booktitle = {Machine Learning under Resource Constraints - Volume 2: Discovery in Physics},
+  publisher = {De Gruyter},
+  title     = {Deep Learning Applications},
+  year      = {2022},
+  editor    = {Katharina Morik and Wolfgang Rhode},
+  pages     = {245--278},
+  series    = {De Gruyter {STEM}},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/books/degruyter/22/RhodeHSJPB22.bib},
+  doi       = {10.1515/9783110785968-009},
+  timestamp = {Fri, 28 Jul 2023 11:18:35 +0200},
+  url       = {https://doi.org/10.1515/9783110785968-009},
+}
+
+@InCollection{Yayla/etal/2022a,
+  author    = {Mikail Yayla and Sebastian Buschj{\"{a}}ger and Hussam Amrouch},
+  booktitle = {Machine Learning under Resource Constraints - Volume 1: Fundamentals},
+  publisher = {De Gruyter},
+  title     = {Machine Learning Based on Emerging Memories},
+  year      = {2022},
+  editor    = {Katharina Morik and Peter Marwedel},
+  pages     = {325--337},
+  series    = {De Gruyter {STEM}},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/books/degruyter/22/KotthausMYBAC22-2.bib},
+  doi       = {10.1515/9783110785944-007},
+  timestamp = {Fri, 28 Jul 2023 14:05:33 +0200},
+  url       = {https://doi.org/10.1515/9783110785944-007},
+}
