@@ -97,11 +97,6 @@ $ bundle exec jekyll serve
 ```
 
 **IMPORTANT**: THIS VERSION CURRENTLY WORKS WITH RUBY-2.7!! SO MAKE SURE TO USE IT BEFORE DEPLOYING IT!!!!
-  
-  sudo rm /usr/bin/ruby && sudo ln -s /usr/bin/ruby-2.7 /usr/bin/ruby
-  ./bin/deploy --user
-  sudo rm /usr/bin/ruby && sudo ln -s /usr/bin/ruby-3.0 /usr/bin/ruby
-
 
 Now, feel free to customize the theme however you like (don't forget to change the name!).
 After you are done, **commit** your final changes.
