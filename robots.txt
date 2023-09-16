@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sbuschjaeger.github.io/sitemap.xml
