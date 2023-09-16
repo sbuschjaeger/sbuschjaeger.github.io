@@ -1,0 +1,8 @@
+github_users:
+  - sbuschjaeger
+
+github_repos:
+  - sbuschjaeger/PyPruning
+  - sbuschjaeger/FastInference
+  - sbuschjaeger/ShrubEnsembles
+  - sbuschjaeger/SubmodularStreamingMaximization

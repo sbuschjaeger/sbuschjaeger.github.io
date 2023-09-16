@@ -1,0 +1,55 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Sebastian Buschjäger
+    - name: Date of Birth
+      value: 25th December 1990
+    - name: Languages
+      value: English, German
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD
+      institution: TU Dortmund University
+      year: 2022
+      description:
+        - Thesis title "Ensemble Learning with Discrete Classifiers on Small Devices"
+        - Supervised by Prof. Dr. Katharina Morik and Prof. Dr. Johannes Fürnkranz
+    - title: Master Computer Science with Minor in Electrical Engineering
+      institution: TU Dortmund University
+      year: 2016
+      description:
+        - Thesis title "Online Gauß-Prozesse zur Regression auf FPGAs"
+    - title: Bachelor Computer Science with Minor in Electrical Engineering
+      institution: TU Dortmund University
+      year: 2013
+      description:
+        - Thesis title "Unsupervised Learning of Applied Robot Actuator Coordination"
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Postdoctorial Researcher and Coordinator for Resource-Aware Machine Learning
+      institution: The Lamarr Institute for Machine Learning and Artificial Intelligence
+      year: 2023-now
+      description:
+        - Postdoctoral Researcher in the context of Resource-Aware Machine Learning
+        - Coordination of Resource-Aware Machine Learning research in the Lamarr Institute
+    - title: Researcher and PhD Student 
+      institution: Artificial Intelligence Unit, TU Dortmund
+      year: 2016-2022
+      description:
+        - Researcher and PhD Student in the CRC-876, project A1
+    - title: Research Assistant (WHF) 
+      institution: Artificial Intelligence Unit, TU Dortmund
+      year: 2013 - 2016
+      description:
+        - Literature research and report writing (LaTex)
+        - Development and implementation in the context of streaming technologies and webcrawling (Java, Python)
+    - title: Research Assistant (SHK) 
+      institution: Communication Networks Institute, TU Dortmund
+      year: 2010 - 2013
+      description:
+        - Development and implementation of tools in the context UAV and micro drones (C/C++, Matlab)

@@ -2,7 +2,7 @@
  * Themes
  ******************************************************************************/
  
-:root {
+ :root {
   --global-bg-color: #{$grey-color-light};
   --global-text-color: #{$black-color};
   --global-theme-color: #{$green-color};
@@ -10,6 +10,9 @@
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
+  --global-distill-app-color: #{$grey-color};
+  --global-divider-color: rgba(0,0,0,.1);
+  --global-card-bg-color: #{$white-color};
   --global-icon-color: #{$grey-color-dark};
   --global-bibtex-color: #{$grey-color-light};
   --global-bibtex-bg-color: #{$grey-color-dark};
@@ -23,16 +26,27 @@
     padding-top: 12px;
     display : block;
   }
+
+  .repo-img-light {
+    display: block;
+  }
+  .repo-img-dark {
+    display: none;
+  }
 }
 
 html[data-theme='dark'] {
   --global-bg-color: #{$grey-color-dark};
+  --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-theme-color: #{$green-color};
   --global-hover-color: #{$green-color-dark};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
+  --global-distill-app-color: #{$grey-color-light};
+  --global-divider-color: #424246;
+  --global-card-bg-color: #{$grey-900};
   --global-icon-color: navajowhite;
   --global-bibtex-color: var(--global-bg-color);
   --global-bibtex-bg-color: var(--global-text-color);
@@ -45,5 +59,12 @@ html[data-theme='dark'] {
   }
   .fa-moon {
     display : none;
+  }
+
+  .repo-img-light {
+    display: none;
+  }
+  .repo-img-dark {
+    display: block;
   }
 }

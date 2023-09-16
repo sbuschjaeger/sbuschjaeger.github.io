@@ -4,10 +4,12 @@ permalink: /teaching/
 title: teaching
 description: I do some teaching. However, that stuff is mostly in German.
 nav: true
+nav_order: 5
 ---
 
 ### summerschools 
 
+- Towards Energy-Efficient Model Application @ Bifold/Weizenbaum Summerschool for Artificial Intelligence and ecological Sustainability 2023 
 - FastInference – Applying Large Models on Small Devices @ SFB 876 Summerschool 2020 [\[slides\]](https://tu-dortmund.sciebo.de/s/TDzUsU1X6YRCidl), [\[video\]](https://youtu.be/0h5--M21tyY)
 - Deep Learning for small devices and FPGAs @ 4th International Summerschool for Big Data and Machine Learning 2018 [\[slides\]](https://www.scads.de/en/summerschool-2018) 
 - Introduction to Deep Learning @ SFB 876 Summerschool 2017 [\[slides\]](https://sfb876.tu-dortmund.de/SummerSchool2017/index.html)
