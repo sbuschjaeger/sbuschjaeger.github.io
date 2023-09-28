@@ -3,7 +3,7 @@ layout: page
 permalink: /software/
 title: software
 description: I do some programming. That stuff is mostly in Python and C/C++. 
-nav: true
+nav: False
 ---
 
 These are some software packages which are independent from specific papers and which I try to maintain as best as possible. For a complete list of software projects checkout my github [repositories](https://github.com/sbuschjaeger?tab=repositories).
