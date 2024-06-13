@@ -1,3 +1,46 @@
+@InProceedings{Buschjaeger/2024,
+  abstract           = {As machine learning models become increasingly integrated into various applications, the need for resource-aware deployment strategies becomes paramount. One promising approach for optimizing resource consumption is rejection ensembles.  Rejection ensembles combine a small model deployed to an edge device with a large model deployed in the cloud with a rejector tasked to determine the most suitable model for a given input. Due to its novelty, existing research predominantly focuses on ad-hoc ensemble design, lacking a thorough understanding of rejector optimization and deployment strategies. This paper addresses this research gap by presenting a theoretical investigation into rejection ensembles and proposing a novel algorithm for training and deploying rejectors based on these novel insights. We give precise conditions of when a good rejector can improve the ensemble's overall performance beyond the big model's performance and when a bad rejector can make the ensemble worse than the small model. Second, we show that even the perfect rejector can overuse its budget for using the big model during deployment. Based on these insights, we propose to ignore any budget constraints during training but introduce additional safeguards during deployment. Experimental evaluation on 8 different datasets from various domains demonstrates the efficacy of our novel rejection ensembles outperforming existing approaches. Moreover, compared to standalone large model inference, we highlight the energy efficiency gains during deployment on a Nvidia Jetson AGX board.},
+  author             = {Buschjäger, Sebastian},
+  booktitle          = {European Conference on Machine Learning and Knowledge Discovery in Databases, ECML PKDD},
+  title              = {Rejection Ensembles with Online Calibration (RewOC) (to appear)},
+  year               = {2024},
+  selected           = {true},
+  code               = {https://github.com/sbuschjaeger/rewoc},
+  abbr               = {ECML}
+}
+
+@InProceedings{Fischer/etal/2024b,
+  title              = {{MetaQuRe}: Meta-Learning from Model Quality and Resource Consumption (to appear)},
+  abstract           = {Automated machine learning (AutoML) allows for selecting, parametrizing, and composing learning algorithms for a given data set. While resources play a pivotal role in neural architecture search, it is less pronounced by classical AutoML approaches. In fact, they generally focus on only maximizing predictive quality and disregard the importance of finding resource-efficient solutions. To push resource-awareness further, our work explicitly explores how measures such as running time or energy consumption can be better considered in AutoML. Firstly, we propose a novel method for algorithm selection that balances multiple performance aspects (including resource demand) as prioritized by the user with the help of compositional meta-learning. Secondly, to foster research on green meta-learning and AutoML, we release the MetaQuRe data set, which contains information on predictive (Qu)ality and (Re)source consumption of models evaluated across hundreds of data sets and four execution environments. We use this data to put our methodology into practice and conduct an in-depth analysis of how our approach and data set can help in making AutoML more resource-aware, which represents our third contribution. Lastly, we publish MetaQuRe alongside an extensive code base, allowing for reproducing all results, expanding our data with results from custom environments, and exploring MetaQuRe interactively. In short, our work demonstrates both the importance as well as benefits of rethinking AutoML and meta-learning in a resource-aware way, thus paving the path for making future ML solutions more sustainable.},
+  author             = {Fischer, Raphael and Wever, Marcel and Buschjäger, Sebastian},
+  booktitle          = {European Conference on Machine Learning and Knowledge Discovery in Databases},
+  year               = {2024},
+  abbr               = {ECML}
+}
+
+@Article{Fischer/etal/2024,
+  author             = {Fischer, Raphael and van der Staay, Alexander and Buschjäger, Sebastian},
+  title              = {Stress-Testing USB Accelerators for Efficient Edge Inference},
+  doi                = {https://doi.org/10.21203/rs.3.rs-3793927/v1},
+  pubstate           = {prepublished},
+  url                = {https://www.researchsquare.com/article/rs-3793927/v1},
+  abstract           = {Several manufacturers sell specialized USB devices for accelerating machine learning (ML) on the edge. While being generally promoted as a versatile solution for more efficient edge inference with deep learning models, extensive practical insights on their usability and performance are hard to find. In order to make ML deployment on the edge more sustainable, our work investigates how resource efficient these USB accelerators really are. For that, we first introduce a novel and theoretically sound methodology. It allows for comparing intricate model performance in terms of quality and resource consumption across different execution environments. We then put it into practice by studying the usability and efficiency of Google's Coral edge tensor processing unit (TPU) and Intel's neural compute stick 2 (NCS). In total, we benchmark over 30 models across nine hardware configurations, which reveals intricate trade-offs. Our work demonstrates that USB accelerators are indeed capable of reducing the energy consumption by a factor up to ten, however this improvement cannot be observed for all configurations - more than 50% of the investigated models cannot be run on accelerator hardware, and in several other cases, the power draw is only marginally improved. Our experiments show that the NCS improves efficiency in a more stable way, while the TPU shows further benefits in specific cases but performs less predictable. We hope that our paper provides valuable insights for practitioners that want to deploy ML on the edge in the most efficient and sustainable way.},
+  month              = {1},
+  year               = {2024},
+}
+
+@InProceedings{Tomaras/etal/2024,
+  abstract           = {Serverless computing has received growing interest in recent years for supporting machine learning tasks. This computational model has desirable advantages as it allows for parallelism of training tasks, exploiting the undoubtedly seamless mechanism for scaling and elastic usage of resources based on the applications' demands, and improves manageability without the need to know the internals of the underlying technology. Training a machine learning model on top of a serverless environment is a nontrivial procedure since several challenges must be addressed, such as the communication cost of the training data, the communication patterns, the training time, and the cost of execution. In this work, we focus on Random Forests, a state-of-the-art technique in many machine learning applications. We propose STRATA, a cost-effective framework to train Random Forests on top of a serverless environment that addresses the aforementioned training challenges practically and efficiently by at least 57\% on average, as we illustrate in our extensive experimental evaluation},
+  author             = {Tomaras, Dimitrios and Buschjäger, Sebastian and Kalogeraki, Vana and Morik, Katharina and Gunopulos, Dimitrios},
+  booktitle          = {25th ACM/IFIP International Middleware Conference},
+  pubstate           = {forthcoming},
+  title              = {Random Forests going Serverless (to appear)},
+  year               = {2024},
+  selected           = {true},
+  code               = {https://github.com/sbuschjaeger/serverless-rf},
+  abbr               = {MIDDLEWARE}
+}
+
 @Article{Buschjaeger/Morik/2023,
   author       = {Sebastian Buschj{\"{a}}ger and Katharina Morik},
   title        = {Joint leaf-refinement and ensemble pruning through L\({}_{\mbox{1}}\) regularization},
@@ -58,7 +101,6 @@
   arxiv     = {2112.03723},
   code      = {https://github.com/sbuschjaeger/se-online},
   poster    = {aaai2022_poster.pdf},
-  selected  = {true},
   slides    = {aaai2022_slides.pdf},
   url       = {https://arxiv.org/abs/2112.03723},
   video     = {https://slideslive.com/embed/presentation/38976989?embed_parent_url=https%3A%2F%2Faaai-2022.virtualchair.net%2Fposter_aaai10816&embed_container_origin=https%3A%2F%2Faaai-2022.virtualchair.net&embed_container_id=presentation-video&auto_load=true&auto_play=false&zoom_ratio=&disable_fullscreen=false&locale=en&vertical_enabled=true&vertical_enabled_on_mobile=false&allow_hidden_controls_when_paused=false&fit_to_viewport=true&user_uuid=6693ffb9-6d22-4e46-8c19-6db37e50a729},
@@ -78,20 +120,18 @@
   publisher = {Association for Computing Machinery},
   year      = {2021},
   abbr = {TECS},
-  selected = {true}
 }
 
 @misc{Buschjaeger/morik/2021c,
-      title={There is no Double-Descent in Random Forests}, 
-      author={Sebastian Buschjäger and Katharina Morik},
-      year={2021},
-      eprint={2111.04409},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url = {https://arxiv.org/abs/2111.04409},
-      arxiv = {2111.04409},
-      abbr = {arXiv},
-      selected = {true}
+    title={There is no Double-Descent in Random Forests}, 
+    author={Sebastian Buschjäger and Katharina Morik},
+    year={2021},
+    eprint={2111.04409},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG},
+    url = {https://arxiv.org/abs/2111.04409},
+    arxiv = {2111.04409},
+    abbr = {arXiv},
 }
 
 @misc{Buschjaeger/Morik/2021b,
