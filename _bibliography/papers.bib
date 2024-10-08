@@ -1,28 +1,47 @@
+@InProceedings{Casella/etal/2024a,
+  abstract           = {This paper proposes FROCKS, a federated time series classification method using ROCKET features. Our approach dynamically adapts the models features by selecting and exchanging the best-performing ROCKET kernels from a federation of clients. Specifically, the server gathers the best-performing kernels of the clients together with the associated model parameters, and it performs a weighted average if a kernel is best-performing for more than one client. We compare the proposed method with state-of-the-art approaches on the UCR archive binary classification datasets and show superior performance on most datasets.},
+  author             = {Casella, Bruno and Jakobs, Matthias and Aldinucci, Marco and Buschjäger, Sebastian},
+  booktitle          = {European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning},
+  date               = {2024-10},
+  url = {https://doi.org/10.14428/esann/2024.ES2024-61},
+  title              = {Federated Time Series Classification with ROCKET features},
+}
+
+@InProceedings{Malcher/etal/2024a,
+  abstract           = {Arising popularity for resource-efficient machine learning models makes random forests and decision trees famous models in recent years. Naturally, these models are tuned, optimized, and transformed to feature maximally low-resource consumption. A subset of these strategies targets the model structure and model logic and therefore induces a trade-off between resource-efficiency and prediction performance. An orthogonal set of approaches targets hardware-specific optimizations, which can improve performance without changing the behavior of the model. Since such hardware-specific optimizations are usually hardware-dependent and inflexible in their realizations, this paper envisions a more general application of such optimization strategies at the level of programming languages. We therefore discuss a set of suitable optimization strategies first in general and envision their application in LLVM IR, i.e.~a flexible and hardware-independent ecosystem.},
+  author             = {Malcher, Jannik and Biebert, Daniel and Chen, Kuan-Hsun and Buschjäger, Sebastian and Hakert, Christian and Chen, Jian-Jia},
+  booktitle          = {ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems},
+  date               = {2024-06},
+  url = {https://dl.acm.org/doi/10.1145/3652032.3659366},
+  title              = {Language-Based Deployment Optimization for Random Forests (Invited Paper)},
+}
+
 @InProceedings{Buschjaeger/2024,
   abstract           = {As machine learning models become increasingly integrated into various applications, the need for resource-aware deployment strategies becomes paramount. One promising approach for optimizing resource consumption is rejection ensembles.  Rejection ensembles combine a small model deployed to an edge device with a large model deployed in the cloud with a rejector tasked to determine the most suitable model for a given input. Due to its novelty, existing research predominantly focuses on ad-hoc ensemble design, lacking a thorough understanding of rejector optimization and deployment strategies. This paper addresses this research gap by presenting a theoretical investigation into rejection ensembles and proposing a novel algorithm for training and deploying rejectors based on these novel insights. We give precise conditions of when a good rejector can improve the ensemble's overall performance beyond the big model's performance and when a bad rejector can make the ensemble worse than the small model. Second, we show that even the perfect rejector can overuse its budget for using the big model during deployment. Based on these insights, we propose to ignore any budget constraints during training but introduce additional safeguards during deployment. Experimental evaluation on 8 different datasets from various domains demonstrates the efficacy of our novel rejection ensembles outperforming existing approaches. Moreover, compared to standalone large model inference, we highlight the energy efficiency gains during deployment on a Nvidia Jetson AGX board.},
   author             = {Buschjäger, Sebastian},
   booktitle          = {European Conference on Machine Learning and Knowledge Discovery in Databases, ECML PKDD},
-  title              = {Rejection Ensembles with Online Calibration (RewOC) (to appear)},
+  title              = {Rejection Ensembles with Online Calibration (RewOC)},
   year               = {2024},
   selected           = {true},
+  url = {https://link.springer.com/chapter/10.1007/978-3-031-70365-2_1},
   code               = {https://github.com/sbuschjaeger/rewoc},
   abbr               = {ECML}
 }
 
 @InProceedings{Fischer/etal/2024b,
-  title              = {{MetaQuRe}: Meta-Learning from Model Quality and Resource Consumption (to appear)},
+  title              = {{MetaQuRe}: Meta-Learning from Model Quality and Resource Consumption},
   abstract           = {Automated machine learning (AutoML) allows for selecting, parametrizing, and composing learning algorithms for a given data set. While resources play a pivotal role in neural architecture search, it is less pronounced by classical AutoML approaches. In fact, they generally focus on only maximizing predictive quality and disregard the importance of finding resource-efficient solutions. To push resource-awareness further, our work explicitly explores how measures such as running time or energy consumption can be better considered in AutoML. Firstly, we propose a novel method for algorithm selection that balances multiple performance aspects (including resource demand) as prioritized by the user with the help of compositional meta-learning. Secondly, to foster research on green meta-learning and AutoML, we release the MetaQuRe data set, which contains information on predictive (Qu)ality and (Re)source consumption of models evaluated across hundreds of data sets and four execution environments. We use this data to put our methodology into practice and conduct an in-depth analysis of how our approach and data set can help in making AutoML more resource-aware, which represents our third contribution. Lastly, we publish MetaQuRe alongside an extensive code base, allowing for reproducing all results, expanding our data with results from custom environments, and exploring MetaQuRe interactively. In short, our work demonstrates both the importance as well as benefits of rethinking AutoML and meta-learning in a resource-aware way, thus paving the path for making future ML solutions more sustainable.},
   author             = {Fischer, Raphael and Wever, Marcel and Buschjäger, Sebastian},
   booktitle          = {European Conference on Machine Learning and Knowledge Discovery in Databases},
   year               = {2024},
-  abbr               = {ECML}
+  abbr               = {ECML},
+  url = {https://link.springer.com/chapter/10.1007/978-3-031-70368-3_13}
 }
 
 @Article{Fischer/etal/2024,
   author             = {Fischer, Raphael and van der Staay, Alexander and Buschjäger, Sebastian},
-  title              = {Stress-Testing USB Accelerators for Efficient Edge Inference},
+  title              = {Stress-Testing USB Accelerators for Efficient Edge Inference (to appear)},
   doi                = {https://doi.org/10.21203/rs.3.rs-3793927/v1},
-  pubstate           = {prepublished},
   url                = {https://www.researchsquare.com/article/rs-3793927/v1},
   abstract           = {Several manufacturers sell specialized USB devices for accelerating machine learning (ML) on the edge. While being generally promoted as a versatile solution for more efficient edge inference with deep learning models, extensive practical insights on their usability and performance are hard to find. In order to make ML deployment on the edge more sustainable, our work investigates how resource efficient these USB accelerators really are. For that, we first introduce a novel and theoretically sound methodology. It allows for comparing intricate model performance in terms of quality and resource consumption across different execution environments. We then put it into practice by studying the usability and efficiency of Google's Coral edge tensor processing unit (TPU) and Intel's neural compute stick 2 (NCS). In total, we benchmark over 30 models across nine hardware configurations, which reveals intricate trade-offs. Our work demonstrates that USB accelerators are indeed capable of reducing the energy consumption by a factor up to ten, however this improvement cannot be observed for all configurations - more than 50% of the investigated models cannot be run on accelerator hardware, and in several other cases, the power draw is only marginally improved. Our experiments show that the NCS improves efficiency in a more stable way, while the TPU shows further benefits in specific cases but performs less predictable. We hope that our paper provides valuable insights for practitioners that want to deploy ML on the edge in the most efficient and sustainable way.},
   month              = {1},
@@ -34,7 +53,7 @@
   author             = {Tomaras, Dimitrios and Buschjäger, Sebastian and Kalogeraki, Vana and Morik, Katharina and Gunopulos, Dimitrios},
   booktitle          = {25th ACM/IFIP International Middleware Conference},
   pubstate           = {forthcoming},
-  title              = {Random Forests going Serverless (to appear)},
+  title              = {STRATA: Random Forests going Serverless (to appear)},
   year               = {2024},
   selected           = {true},
   code               = {https://github.com/sbuschjaeger/serverless-rf},
