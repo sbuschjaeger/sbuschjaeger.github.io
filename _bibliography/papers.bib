@@ -5,6 +5,7 @@
   date               = {2024-10},
   url = {https://doi.org/10.14428/esann/2024.ES2024-61},
   title              = {Federated Time Series Classification with ROCKET features},
+  abbr = {ESANN}
 }
 
 @InProceedings{Malcher/etal/2024a,
@@ -14,6 +15,7 @@
   date               = {2024-06},
   url = {https://dl.acm.org/doi/10.1145/3652032.3659366},
   title              = {Language-Based Deployment Optimization for Random Forests (Invited Paper)},
+  abbr = {SIGPLAN/SIGBED}
 }
 
 @InProceedings{Buschjaeger/2024,
@@ -38,14 +40,15 @@
   url = {https://link.springer.com/chapter/10.1007/978-3-031-70368-3_13}
 }
 
-@Article{Fischer/etal/2024,
+@InProceedings{Fischer/etal/2024,
   author             = {Fischer, Raphael and van der Staay, Alexander and Buschjäger, Sebastian},
   title              = {Stress-Testing USB Accelerators for Efficient Edge Inference (to appear)},
   doi                = {https://doi.org/10.21203/rs.3.rs-3793927/v1},
   url                = {https://www.researchsquare.com/article/rs-3793927/v1},
+  booktitle          = {ACM/IEEE Symposium on Edge Computing},
   abstract           = {Several manufacturers sell specialized USB devices for accelerating machine learning (ML) on the edge. While being generally promoted as a versatile solution for more efficient edge inference with deep learning models, extensive practical insights on their usability and performance are hard to find. In order to make ML deployment on the edge more sustainable, our work investigates how resource efficient these USB accelerators really are. For that, we first introduce a novel and theoretically sound methodology. It allows for comparing intricate model performance in terms of quality and resource consumption across different execution environments. We then put it into practice by studying the usability and efficiency of Google's Coral edge tensor processing unit (TPU) and Intel's neural compute stick 2 (NCS). In total, we benchmark over 30 models across nine hardware configurations, which reveals intricate trade-offs. Our work demonstrates that USB accelerators are indeed capable of reducing the energy consumption by a factor up to ten, however this improvement cannot be observed for all configurations - more than 50% of the investigated models cannot be run on accelerator hardware, and in several other cases, the power draw is only marginally improved. Our experiments show that the NCS improves efficiency in a more stable way, while the TPU shows further benefits in specific cases but performs less predictable. We hope that our paper provides valuable insights for practitioners that want to deploy ML on the edge in the most efficient and sustainable way.},
-  month              = {1},
   year               = {2024},
+  abbr = {SEC}
 }
 
 @InProceedings{Tomaras/etal/2024,
@@ -90,10 +93,11 @@
   doi          = {10.48550/arXiv.2305.08579},
   eprint       = {2305.08579},
   eprinttype   = {arXiv},
-  journal = {CoRR},
+  journal = {arXiv},
   timestamp    = {Wed, 17 May 2023 15:47:36 +0200},
   url          = {https://doi.org/10.48550/arXiv.2305.08579},
-  abbr         = {arXiv}
+  abbr         = {arXiv},
+  arxiv = {2305.08579}
 }
 
 @PhdThesis{Buschjaeger/2022,
@@ -103,6 +107,7 @@
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/phd/dnb/Buschjager22.bib},
   school    = {Technical University of Dortmund, Germany},
+  journal    = {Dissertation, TU Dortmund},
   timestamp = {Fri, 20 Jan 2023 21:27:23 +0100},
   urn       = {urn:nbn:de:101:1-2022111802423335923878},
   year      = {2022},
@@ -141,26 +146,36 @@
   abbr = {TECS},
 }
 
-@misc{Buschjaeger/morik/2021c,
-    title={There is no Double-Descent in Random Forests}, 
-    author={Sebastian Buschjäger and Katharina Morik},
-    year={2021},
-    eprint={2111.04409},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG},
-    url = {https://arxiv.org/abs/2111.04409},
+@Article{Buschjaeger/morik/2021c,
+    author       = {Sebastian Buschj{\"{a}}ger and
+                  Katharina Morik},
+    title        = {There is no Double-Descent in Random Forests},
+    journal      = {arXiv},
+    volume       = {abs/2111.04409},
+    year         = {2021},
+    url          = {https://arxiv.org/abs/2111.04409},
+    eprinttype    = {arXiv},
+    eprint       = {2111.04409},
+    timestamp    = {Wed, 10 Nov 2021 16:07:30 +0100},
+    biburl       = {https://dblp.org/rec/journals/corr/abs-2111-04409.bib},
+    bibsource    = {dblp computer science bibliography, https://dblp.org},
     arxiv = {2111.04409},
     abbr = {arXiv},
 }
 
-@misc{Buschjaeger/Morik/2021b,
-  title={Improving the Accuracy-Memory Trade-Off of Random Forests Via Leaf-Refinement}, 
-  author={Sebastian Buschjäger and Katharina Morik},
-  year={2021},
-  eprint={2110.10075},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url = {https://arxiv.org/abs/2110.10075},
+@Article{Buschjaeger/Morik/2021b,
+  author       = {Sebastian Buschj{\"{a}}ger and
+                  Katharina Morik},
+  title        = {Improving the Accuracy-Memory Trade-Off of Random Forests Via Leaf-Refinement},
+  journal      = {arXiv},
+  volume       = {abs/2110.10075},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2110.10075},
+  eprinttype    = {arXiv},
+  eprint       = {2110.10075},
+  timestamp    = {Mon, 25 Oct 2021 20:07:12 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2110-10075.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
   arxiv = {2110.10075},
   abbr = {arXiv}
 }
@@ -178,17 +193,18 @@
   abbr = {ECML}
 }
 
-@misc{Honysz/etal/2021b,
+@Article{Honysz/etal/2021b,
     title={Providing Meaningful Data Summarizations Using Exemplar-based Clustering in Industry 4.0}, 
     author={Philipp-Jan Honysz and Alexander Schulze-Struchtrup and Sebastian Buschjäger and Katharina Morik},
     year={2021},
     eprint={2105.12026},
     url = {https://arxiv.org/abs/2105.12026},
     arxiv = {2105.12026},
-    abbr = {arXiv}
+    abbr = {arXiv},
+    journal = {arXiv}
 }
 
-@misc{Honysz/etal/2021a,
+@Article{Honysz/etal/2021a,
   title={GPU-Accelerated Optimizer-Aware Evaluation of Submodular Exemplar Clustering}, 
   author={Philipp-Jan Honysz and Sebastian Buschjäger and Katharina Morik},
   year={2021},
@@ -196,16 +212,31 @@
   url = {https://arxiv.org/pdf/2101.08763.pdf},
   arxiv = {2101.08763},
   code = {https://github.com/philippjh/exemcl},
-  abbr = {arXiv}
+  abbr = {arXiv},
+  journal = {arXiv}
 }
 
-@misc{Buschjaeger/etal/2021c,
-  title={Bit Error Tolerance Metrics for Binarized Neural Networks}, 
-  author={Sebastian Buschjäger and Jian-Jia Chen and Kuan-Hsun Chen and Mario Günzel and Katharina Morik and Rodion Novkin and Lukas Pfahler and Mikail Yayla},
-  year={2021},
-  arxiv = {2102.01344},
-  url={https://arxiv.org/abs/2102.01344},
-  abbr = {arXiv}
+@Article{Buschjaeger/etal/2021c,
+  author       = {Sebastian Buschj{\"{a}}ger and
+                  Jian{-}Jia Chen and
+                  Kuan{-}Hsun Chen and
+                  Mario G{\"{u}}nzel and
+                  Katharina Morik and
+                  Rodion Novkin and
+                  Lukas Pfahler and
+                  Mikail Yayla},
+  title        = {Bit Error Tolerance Metrics for Binarized Neural Networks},
+  journal      = {arXiv},
+  volume       = {abs/2102.01344},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2102.01344},
+  eprinttype    = {arXiv},
+  eprint       = {2102.01344},
+  timestamp    = {Sun, 02 Oct 2022 15:32:08 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2102-01344.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  arxiv     =   {2102.01344},
+  abbr = {arxiv}
 }
 
 @article{Yayla/etal/2021,
@@ -219,13 +250,29 @@
   url = {https://ieeexplore.ieee.org/document/9513530}
 }
 
-@inproceedings{Buschjaeger/etal/2021a,
-  author = {Buschj\"{a}ger, Sebastian and Chen, Jian-Jia and Chen, Kuan-Hsun and G{\"u}nzel, Mario and Hakert, Christian and Morik, Katharina and Novkin, Rodion and Pfahler, Lukas and Yayla, Mikail},
-  title = {Margin-Maximization in Binarized Neural Networks for Optimizing Bit Error Tolerance},
-  booktitle = {Proceedings of DATE 2021},
-  year = {2021},
-  abbr = {DATE},
-  url = {https://ls12-www.cs.tu-dortmund.de/daes/media/documents/publications/downloads/2021dateyayla.pdf}
+@inproceedings{Buschjaeger/etal/2021b,
+  author       = {Sebastian Buschj{\"{a}}ger and
+                  Jian{-}Jia Chen and
+                  Kuan{-}Hsun Chen and
+                  Mario G{\"{u}}nzel and
+                  Christian Hakert and
+                  Katharina Morik and
+                  Rodion Novkin and
+                  Lukas Pfahler and
+                  Mikail Yayla},
+  title        = {Margin-Maximization in Binarized Neural Networks for Optimizing Bit
+                  Error Tolerance},
+  booktitle    = {Design, Automation {\&} Test in Europe Conference {\&} Exhibition,
+                  {DATE} 2021, Grenoble, France, February 1-5, 2021},
+  pages        = {673--678},
+  publisher    = {{IEEE}},
+  year         = {2021},
+  url          = {https://doi.org/10.23919/DATE51398.2021.9473918},
+  doi          = {10.23919/DATE51398.2021.9473918},
+  timestamp    = {Sat, 30 Sep 2023 09:38:39 +0200},
+  biburl       = {https://dblp.org/rec/conf/date/BuschjagerCCGHM21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  abbr = {DATE}
 }
 
 @article{Buschjager/Honysz/2020c,
@@ -267,24 +314,51 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   url = {https://arxiv.org/pdf/2010.10059.pdf},
   arxiv = {2010.10059},
   code = {https://github.com/sbuschjaeger/SubmodularStreamingMaximization},
-  abbr = {arXiv}
+  abbr = {arXiv},
+  journal = {arXiv}
 }
 
-@misc{Buschjaeger/etal/2020c,
-  author = {Sebastian Buschj\"{a}ger and Lukas Pfahler and Katharina Morik},
-  title = {Generalized Negative Correlation Learning for Deep Ensembling},
-  year = {2020},
+@Article{Buschjaeger/etal/2020c,
+ author       = {Sebastian Buschj{\"{a}}ger and
+                  Lukas Pfahler and
+                  Katharina Morik},
+  title        = {Generalized Negative Correlation Learning for Deep Ensembling},
+  journal      = {arXiv},
+  volume       = {abs/2011.02952},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2011.02952},
+  eprinttype    = {arXiv},
+  eprint       = {2011.02952},
+  timestamp    = {Mon, 09 Nov 2020 10:30:14 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2011-02952.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
   arxiv = {2011.02952},
-  url = {https://arxiv.org/pdf/2011.02952.pdf},
-  abstract = {Ensemble algorithms offer state of the art performance in many machine learning applications. A common explanation for their excellent performance is due to the bias-variance decomposition of the mean squared error which shows that the algorithm's error can be decomposed into its bias and variance. Both quantities are often opposed to each other and ensembles offer an effective way to manage them as they reduce the variance through a diverse set of base learners while keeping the bias low at the same time. Even though there have been numerous works on decomposing other loss functions, the exact mathematical connection is rarely exploited explicitly for ensembling, but merely used as a guiding principle. In this paper, we formulate a generalized bias-variance decomposition for arbitrary twice differentiable loss functions and study it in the context of Deep Learning. We use this decomposition to derive a Generalized Negative Correlation Learning (GNCL) algorithm which offers explicit control over the ensemble's diversity and smoothly interpolates between the two extremes of independent training and the joint training of the ensemble. We show how GNCL encapsulates many previous works and discuss under which circumstances training of an ensemble of Neural Networks might fail and what ensembling method should be favored depending on the choice of the individual networks.},
   abbr = {arXiv}
 }
 
-@misc{Buschjaeger/etal/2020b,
-  author = {Buschj\"{a}ger, Sebastian and Chen, Jian-Jia and Chen, Kuan-Hsun and G{\"u}nzel, Mario and Hakert, Christian and Morik, Katharina and Novkin, Rodion and Pfahler, Lukas and Yayla, Mikail},
-  title = {Towards Explainable Bit Error Tolerance of Resistive RAM-Based Binarized Neural Networks},
-  year = {2020},
-  url = {https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/buschjaeger_etal_2020b.pdf}
+@Article{Buschjaeger/etal/2020b,
+  author       = {Sebastian Buschj{\"{a}}ger and
+                  Jian{-}Jia Chen and
+                  Kuan{-}Hsun Chen and
+                  Mario G{\"{u}}nzel and
+                  Christian Hakert and
+                  Katharina Morik and
+                  Rodion Novkin and
+                  Lukas Pfahler and
+                  Mikail Yayla},
+  title        = {Towards Explainable Bit Error Tolerance of Resistive RAM-Based Binarized
+                  Neural Networks},
+  journal      = {arXiv},
+  volume       = {abs/2002.00909},
+  arxiv = {2002.00909},
+  abbr = {arXiv},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2002.00909},
+  eprinttype    = {arXiv},
+  eprint       = {2002.00909},
+  timestamp    = {Sun, 02 Oct 2022 15:31:59 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2002-00909.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 
 @inproceedings{Buschjaeger/etal/2020a,
@@ -337,7 +411,7 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
 @article{Morik/etal/2017a,
   author = {Morik, Katharina and Bockermann, Christian and Buschj\"{a}ger, Sebastian},
   title = {Big Data Science},
-  booktitle = {German journal on Artificial Intelligence (KI 2017)},
+  journal = {German journal on Artificial Intelligence},
   month = {12},
   number = {1},
   pages = {27--36},
@@ -372,10 +446,11 @@ In an extensive evaluation of over \$350,000\$ experiments, we show that GIF out
   abbr = {IoTStreaming}
 }
 
-@mastersthesis{Buschjaeger/2016a,
+@masterthesis{Buschjaeger/2016a,
   author = {Buschj\"{a}ger, Sebastian},
   title = {Online Gau{\ss}-Prozesse zur Regression auf FPGAs},
   school = {TU Dortmund},
+  journal = {Masterthesis, TU Dortmund},
   year = {2016},
   abbr = {MA},
   url = {https://www-ai.cs.tu-dortmund.de/PublicPublicationFiles/buschjaeger_2016a.pdf}
