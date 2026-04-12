@@ -31,9 +31,16 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Senior Researcher and Coordinator for Resource-Aware Machine Learning (tenured)
+      institution: The Lamarr Institute for Machine Learning and Artificial Intelligence
+      year: 2025-now
+      description:
+        - Advacing resource-aware machine learning research
+        - Cross-site management of full-time and visiting researchers
+        - Long-term planning of the direction of resource-Aware ML in the Lamarr Institute
     - title: Postdoctorial Researcher and Coordinator for Resource-Aware Machine Learning
       institution: The Lamarr Institute for Machine Learning and Artificial Intelligence
-      year: 2023-now
+      year: 2023-2025
       description:
         - Advacing resource-aware machine learning research
         - Cross-site management of full-time and visiting researchers
