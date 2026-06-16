@@ -27,6 +27,8 @@ nav_order: 5
 
 ### supervised thesis
 
+- Benchmarking Large Language Models for Sustainable Evaluation, Bikem Demirci (BA, Supervisor)
+- Contrastive Representation Learning for PSG-based Sleep Analysis, Hendrik Weißenfels (MA, Supervisor)
 - Ensembles für Quantification durch Konkatenieren von Quantifier-Modellen, Merle Janssen (BA, Second Supervisor)
 - Transformers for Quantized Time Series Forecasting, Dhanunjaya Elluri Thimmaraju (MA, Second Supervisor)
 - Forward-Forward Algorithms for Self-Supervised Learning, Fadi Zoghlami (BA, Second Supervisor)
